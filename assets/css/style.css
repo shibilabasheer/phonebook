@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    background-color: #c2d9f0;
+}
+
+.container-fluid {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+li {
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#submit_div
+{
+    margin-top: 2rem;
+}
