@@ -48,19 +48,21 @@ function listContact() {
         phone.textContent = responseData[i]?.phone;
         li.appendChild(phone);
 
-        //create a delete button and append to li
+        const button = document.createElement("span");
+         //create a delete button and append to li
         const deleteButton = document.createElement("button");
         deleteButton.textContent = "Delete";
         deleteButton.className = "btn btn-sm btn-danger";
         deleteButton.onclick = () => deleteContact(i);
-        li.appendChild(deleteButton);
+        button.appendChild(deleteButton);
 
         //create an edit button and append to li
         const editButton = document.createElement("button");
         editButton.textContent = "Edit";
-        editButton.className = "btn btn-sm btn-success";
+        editButton.className = "btn btn-sm btn-success mx-3";
         editButton.onclick = () => editContact(i);
-        li.appendChild(editButton);
+        button.appendChild(editButton);
+        li.appendChild(button);
 
         document.getElementById("contactList").appendChild(li);
 
