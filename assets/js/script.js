@@ -88,8 +88,8 @@ form.addEventListener("submit", (e) => {
         responseData.push(obj);
     else
     {   
-        obj["id"] = count-1;
-        responseData.splice(editIndex, editIndex, obj);
+        obj["id"] = editIndex+1;
+        responseData[editIndex] = obj;
         editIndex=-1;
     }
 
